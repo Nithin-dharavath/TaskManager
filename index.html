@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="task">
+
+        <h2>Task Manager</h2>
+        <form>
+
+            <div class="taskbar">
+                <p>enter the task</p>
+                <input type="text" placeholder="enter the task">
+            </div>
+
+            <div class="check">
+                <div>
+                    <input type="checkbox" name="done">
+                </div>
+                <div>
+                    <input type="checkbox" name="undone">
+                </div>
+            </div>
+
+
+            <div class="categ">
+                <select name="priority" id="pri">
+                    <option value="one">high</option>
+                    <option value="one">low</option>
+                    <option value="one">moderate</option>
+                    <option value="one">urgent</option>
+                    <option value="one">end of day</option>
+                </select>
+            </div>
+
+            <div class="notify">
+                <div class="msg">
+                    <p>list of task</p>
+                </div>
+
+                <div class="urgent">
+                    <p>priority high</p>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+
+    <script type="module" src="javascript/app.js"></script>
+    <script type="module" src="javascript/state.js"></script>
+    <script type="module" src="javascript/logic.js"></script>
+    <script type="module" src="javascript/storage.js"></script>
+    <script type="module" src="javascript/ui.js"></script>
+</body>
+</html>
