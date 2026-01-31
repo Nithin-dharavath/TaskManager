@@ -9,8 +9,47 @@ body{
     align-items: center;
 }
 .task{
-    background-color: brown;
-    height: 400px;
-    margin: 25%;
+    background-color: #023047;
+    margin-top: 250px;
+    height: 300px;
     padding: 4rem;
+    color: #F8F9FA;
 }
+h2{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 550;
+}
+.taskbar{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.taskbar input{
+    margin: 5px;
+    border: 1px solid #212529;
+}
+#category{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: capitalize;
+    margin-right: 2rem;
+    margin-top: 1em;
+}
+.btn{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.notify{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    height: 170px;
+    text-transform: capitalize;
+}
+

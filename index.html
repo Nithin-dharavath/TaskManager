@@ -12,54 +12,47 @@
     <div class="task">
 
         <h2>Task Manager</h2>
-        <form>
+        <form id="taskForm">
 
             <div class="taskbar">
-                <p>enter the task</p>
-                <input type="text" placeholder="enter the task">
+                <label for="taskInput">Task</label>
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Enter the task"
+                    required
+                >
             </div>
 
-            <div class="check">
-                <div>
-                    <input type="checkbox" name="done">
-                </div>
-                <div>
-                    <input type="checkbox" name="undone">
-                </div>
-            </div>
-
-
-            <div class="categ">
-                <select name="priority" id="pri">
-                    <option value="one">high</option>
-                    <option value="one">low</option>
-                    <option value="one">moderate</option>
-                    <option value="one">urgent</option>
-                    <option value="one">end of day</option>
+            <div id="category">
+                <label for="prioritySelect">Priority</label>
+                <select id="prioritySelect" required>
+                    <option value="">Select priority</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                    <option value="urgent">Urgent</option>
+                    <option value="end">End of Day</option>
                 </select>
             </div>
 
-            <div class="notify">
-                <div class="msg">
-                    <p>list of task</p>
-                </div>
-
-                <div class="urgent">
-                    <p>priority high</p>
-                </div>
+            <div class="btn">
+                <button type="submit" class="add-btn">Add Task</button>
             </div>
 
-
         </form>
+
+        <div class="notify">
+            <h3>Task List</h3>
+            <div id="taskList">
+            </div>
+        </div>
+
 
     </div>
 
 
-
     <script type="module" src="javascript/app.js"></script>
-    <script type="module" src="javascript/state.js"></script>
-    <script type="module" src="javascript/logic.js"></script>
-    <script type="module" src="javascript/storage.js"></script>
-    <script type="module" src="javascript/ui.js"></script>
+
 </body>
 </html>
