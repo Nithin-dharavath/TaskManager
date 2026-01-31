@@ -37,7 +37,6 @@ javascript/
 
 Architecture Overview:
 
-
 This project follows a separation of concerns approach:
 
 app.js
@@ -56,6 +55,7 @@ storage.js
 Saves and restores tasks using browser localStorage.
 
 This structure mirrors real-world frontend system design patterns.
+
 
 
 
