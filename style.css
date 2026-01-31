@@ -30,7 +30,7 @@ h2{
 }
 .taskbar input{
     margin: 5px;
-    border: 1px solid #212529;
+    padding: 1em;
 }
 #category{
     display: flex;
